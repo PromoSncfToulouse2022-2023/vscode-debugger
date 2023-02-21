@@ -1,9 +1,10 @@
-# VSCODE DEBUGGER
+# 💪 VSCODE DEBUGGER
 
 ![Alt text](./debugger-config.png "a title")
 
-## Remplacer le contenu de launch.json par celui ci:
+## Remplacer le contenu de launch.json
 
+### Pour Nest:
 ```json
 {
     "version": "0.2.0",
@@ -23,9 +24,27 @@
 }
 ```
 
+### Pour React:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
+```
+
 ## Demarrer le debugger
 
 ![Alt text](./start-debugger.png "a title")
+
+## <span style="color:red"> ⚠⚠⚠ Pour React faire un `npm start` avant ⚠⚠⚠</span>
 
 ## Placez vos breakpoint
 
